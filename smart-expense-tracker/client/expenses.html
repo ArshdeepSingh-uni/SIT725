@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Expenses</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/expenses.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper teal">
+            <a href="#" class="brand-logo center">Expenses</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Manage Your Expenses</h1>
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Expense Name" required>
+            <input type="number" id="expense-amount" placeholder="Amount" required>
+            <button type="submit">Add Expense</button>
+        </form>
+        <div id="expense-list">
+            <!-- Expense items will be added here dynamically -->
+        </div>
+    </div>
+    <script src="scripts/expenses.js"></script>
+</body>
+</html>

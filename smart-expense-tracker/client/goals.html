@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Goals</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/goals.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper teal">
+            <a href="#" class="brand-logo center">Savings Goals</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="expenses.html">Expenses</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Set Your Savings Goals</h1>
+        <form id="goal-form">
+            <input type="number" id="goal-amount" placeholder="Goal Amount" required>
+            <button type="submit">Set Goal</button>
+        </form>
+        <div id="goal-progress">
+            <!-- Progress updates dynamically -->
+        </div>
+    </div>
+    <script src="scripts/goals.js"></script>
+</body>
+</html>

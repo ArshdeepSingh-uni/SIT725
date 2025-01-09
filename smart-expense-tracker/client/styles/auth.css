@@ -1,0 +1,96 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    height: 100%; /* Ensure full height for centering */
+}
+
+/* Center the Box */
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Card Styling */
+.card {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: white;
+}
+
+/* Tabs Styling */
+.tabs {
+    margin-top: 20px;
+}
+
+.tabs .tab {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabs .tab a {
+    color: #008080;
+    font-size: 16px;
+}
+
+.tabs .tab a.active {
+    border-bottom: 2px solid #008080;
+}
+
+.tabs .indicator {
+    background-color: #008080;
+}
+
+/* Form Section */
+.form-section {
+    margin-top: 20px;
+}
+
+.input-field label {
+    font-size: 14px;
+    color: #666;
+}
+
+.input-field input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-field input:focus {
+    border-color: #008080;
+    box-shadow: none;
+}
+
+/* Full-width button for Materialize */
+button.full-width {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.full-width:hover {
+    background-color: #006666;
+}
+
+/* Error Message Styling */
+.red-text {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}

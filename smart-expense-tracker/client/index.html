@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker - Login & Signup</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+    <main class="center-box">
+        <div class="card">
+            <div class="card-content">
+                <div class="center-align">
+                    <img src="img/logo.png" alt="Smart Expense Tracker Logo" class="circle responsive-img" style="width: 80px;">
+                    <h4 class="teal-text">Smart Expense Tracker</h4>
+                </div>
+
+                <!-- Tabs -->
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab col s6"><a href="#login" class="active teal-text">Login</a></li>
+                    <li class="tab col s6"><a href="#signup" class="teal-text">Sign Up</a></li>
+                </ul>
+
+                <!-- Login Form -->
+                <div id="login" class="col s12 form-section">
+                    <h5 class="teal-text center-align">Login</h5>
+                    <form id="loginForm">
+                        <div class="input-field">
+                            <input id="loginEmail" type="email" name="email" required>
+                            <label for="loginEmail">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="loginPassword" type="password" name="password" required>
+                            <label for="loginPassword">Password</label>
+                        </div>
+                        <button type="submit" class="btn teal waves-effect waves-light full-width">LOGIN</button>
+                    </form>
+                    <div id="login-error-message" class="red-text center-align"></div>
+                </div>
+
+                <!-- Signup Form -->
+                <div id="signup" class="col s12 form-section">
+                    <h5 class="teal-text center-align">Sign Up</h5>
+                    <form id="signupForm">
+                        <div class="input-field">
+                            <input id="signupName" type="text" name="name" required>
+                            <label for="signupName">Full Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="signupEmail" type="email" name="email" required>
+                            <label for="signupEmail">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="signupPassword" type="password" name="password" required>
+                            <label for="signupPassword">Password</label>
+                        </div>
+                        <button type="submit" class="btn teal waves-effect waves-light full-width">SIGN UP</button>
+                    </form>
+                    <div id="signup-error-message" class="red-text center-align"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts/auth.js"></script>
+</body>
+</html>
